@@ -1,0 +1,8 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+MESSAGE := asdf
+LOCAL_MODULE := @target@
+LOCAL_SRC_FILES := $(TARGET_ARCH_DIR)/lib@target@.so
+include $(PREBUILD_SHARED_LIBRARY)
+

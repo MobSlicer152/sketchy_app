@@ -1,0 +1,34 @@
+package @APP_JAVA_ID@;
+
+import android.util.Log;
+
+import java.io.File;
+
+import org.libsdl.app.SDLActivity;
+
+public class @APP_UPPER_ID@ extends SDLActivity {
+	public String getMainFunction() {
+		return "SDL_main";
+	}
+
+	public String[] getLibraries() {
+		return new String[] {
+			"@target@",
+		};
+	}
+
+	private String makeDataDir() {
+		File path = new File(getFilesDir() + "/@APP_ID@");
+
+		Log.i("@APP_ID@", "Using path " + path.toString() + " as data directory");
+
+		return path.toString();
+	}
+
+	public String[] getArguments() {
+		return new String[] {
+			makeDataDir(),
+		};
+	}
+}
+
