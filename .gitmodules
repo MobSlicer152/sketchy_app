@@ -1,6 +1,6 @@
 [submodule "deps/sdl2"]
 	path = deps/sdl2
-	url = https://github.com/libsdl-org/SDL.git
+	url = https://github.com/libsdl-org/SDL
 [submodule "deps/lvgl"]
 	path = deps/lvgl
 	url = https://github.com/lvgl/lvgl
